@@ -10,7 +10,7 @@ market.conition<-function(S,K,r,sigma,T,n,M,Q)
     x<-rnorm(M,0,1)#M個の標準正規乱数
     for(j in 1:M)#Mは時点の数
     {
-      St<-ST*exp((r-0.5*sigma^2)*dt+sigma*sqrt(dt)*x[j])
+      St<-St*exp((r-0.5*sigma^2)*dt+sigma*sqrt(dt)*x[j])
       #1時点前の株価にランダムウォークのモデルを当てはめてStを更新する
       if(Smod==0)
       {
