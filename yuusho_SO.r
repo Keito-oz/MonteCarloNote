@@ -1,4 +1,4 @@
-market.conition<=function(S,K,r,sigma,T,n,M,Q)
+market.conition<-function(S,K,r,sigma,T,n,M,Q)
 {
   P<-0    #SOの価格
   L<-0    #利得が生徒なるパスの数
@@ -45,3 +45,5 @@ market.conition<=function(S,K,r,sigma,T,n,M,Q)
   #nで割って平均を出す。
   return(c("株価条件付きオプション価格"=P,"正となるパスの数"=L))
 }
+
+market.conition(600,600,0.00275,0.67,7.1,10000,10000,300)
