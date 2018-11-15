@@ -46,7 +46,7 @@ market.conition<-function(S,K,r,sigma,T,n,M,Q)
   return(c("株価条件付きオプション価格"=P,"正となるパスの数"=L))
 }
 
-system.time(market.conition(600,600,0.00275,0.67,7.1,10000,10000,300))
+system.time(market.conition(600,600,0.00275,0.67,7.1,10000,500,300))
 
 market.conition2<-function(S,K,r,sigma,T,n,M,Q)
 {
